@@ -1,0 +1,23 @@
+[package]
+name = "tradingBot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio-tungstenite = { version = "0.26.1", features = ["native-tls"] }
+futures-util = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+async-stream = "0.3"
+tokio = { version = "1.0", features = ["full"] }
+chrono = { version = "0.4", features = ["serde"] }
+dotenv = "0.15" 
+log = "0.4"
+env_logger = "0.11.6"
+hmac = "0.12"
+sha2 = "0.10"
+base64 = "0.22.1"
+reqwest = { version = "0.12.12", features = ["json"] }
+kraken_rest_client = "0.27.0"
+bytes = "1.7.0"
+mongodb = "3.2.0"
